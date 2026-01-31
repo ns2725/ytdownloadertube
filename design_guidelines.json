@@ -1,0 +1,142 @@
+{
+  "identity": {
+    "name": "E1",
+    "archetype": "The Anti-AI Designer",
+    "mission": "Create a 'Cyber-Professional' utility tool that feels like a developer's secret weapon, not a spammy downloader site."
+  },
+  "design_system": {
+    "typography": {
+      "headings": {
+        "family": "Outfit, sans-serif",
+        "weights": ["500", "700"],
+        "usage": "Use for all section titles, hero text, and feature headers. Tracking tight (-0.02em).",
+        "import_url": "https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Manrope:wght@400;500;600&display=swap"
+      },
+      "body": {
+        "family": "Manrope, sans-serif",
+        "weights": ["400", "500"],
+        "usage": "Use for all paragraph text, inputs, and metadata."
+      }
+    },
+    "colors": {
+      "palette": {
+        "background": {
+          "default": "#020617",
+          "paper": "#0F172A",
+          "subtle": "#1E293B"
+        },
+        "primary": {
+          "main": "#3B82F6",
+          "hover": "#2563EB",
+          "glow": "rgba(59, 130, 246, 0.5)"
+        },
+        "accent": {
+          "cyan": "#06B6D4",
+          "purple": "#8B5CF6",
+          "error": "#EF4444"
+        },
+        "text": {
+          "primary": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "muted": "#64748B"
+        },
+        "border": {
+          "default": "#1E293B",
+          "active": "#3B82F6"
+        }
+      },
+      "gradients": {
+        "hero_glow": "radial-gradient(circle at center, rgba(59, 130, 246, 0.15) 0%, rgba(2, 6, 23, 0) 70%)",
+        "button_primary": "linear-gradient(135deg, #3B82F6 0%, #2563EB 100%)",
+        "text_gradient": "linear-gradient(to right, #F8FAFC, #94A3B8)"
+      }
+    },
+    "spacing": {
+      "container_padding": "p-6 md:p-12 lg:p-24",
+      "section_gap": "gap-16 md:gap-24",
+      "element_gap": "gap-4 md:gap-6"
+    },
+    "radius": {
+      "default": "rounded-xl",
+      "button": "rounded-full",
+      "input": "rounded-2xl"
+    },
+    "shadows": {
+      "glow": "0 0 20px -5px rgba(59, 130, 246, 0.3)",
+      "card": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+      "input_focus": "0 0 0 2px rgba(59, 130, 246, 0.3), 0 0 20px rgba(59, 130, 246, 0.2)"
+    }
+  },
+  "components": {
+    "Input": {
+      "style": "h-16 text-lg bg-slate-900/50 border-slate-800 focus:border-blue-500 focus:ring-0 transition-all duration-300 placeholder:text-slate-600",
+      "wrapper": "relative w-full max-w-2xl mx-auto group",
+      "icon": "absolute left-4 top-1/2 -translate-y-1/2 text-slate-500 group-focus-within:text-blue-500 transition-colors"
+    },
+    "Button": {
+      "primary": "h-14 px-8 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full shadow-[0_0_20px_-5px_rgba(59,130,246,0.5)] hover:shadow-[0_0_30px_-5px_rgba(59,130,246,0.7)] transition-all active:scale-95",
+      "secondary": "h-14 px-8 bg-slate-800 hover:bg-slate-700 text-slate-200 font-medium rounded-full border border-slate-700 transition-all"
+    },
+    "Card": {
+      "base": "bg-slate-900/40 backdrop-blur-md border border-slate-800/60 rounded-2xl p-6 hover:border-slate-700 transition-colors",
+      "glass": "bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl"
+    },
+    "AdSlot": {
+      "container": "bg-slate-900/30 border border-dashed border-slate-800 rounded-lg flex items-center justify-center text-slate-600 text-xs uppercase tracking-widest",
+      "label": "Advertisement"
+    }
+  },
+  "layout_strategies": {
+    "hero_section": {
+      "structure": "Centered layout with 'Hero Glow' background. Input field is the protagonist.",
+      "elements": [
+        "H1: 'Download YouTube Videos at Light Speed'",
+        "Subtext: 'No ads, no limits, just pure 4K quality.' (Irony: we have ads, but UI feels clean)",
+        "Input Field: Massive, central, glowing.",
+        "Trust Badges: '10M+ Downloads', 'Secure', 'Fast'"
+      ]
+    },
+    "bento_grid": {
+      "usage": "Features section and 'How it works'",
+      "columns": "grid-cols-1 md:grid-cols-3",
+      "gap": "gap-6"
+    },
+    "ad_placement": {
+      "desktop": "Fixed width (160px or 300px) columns on far left/right of the main container, or integrated into the grid as 'sponsored' tiles.",
+      "mobile": "Inline between 'Download Options' and 'Video Details'."
+    }
+  },
+  "assets": {
+    "images": {
+      "hero_bg": {
+        "url": "https://images.unsplash.com/photo-1764258560300-2346b28b4e7c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODR8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGRhcmslMjBibHVlJTIwZGlnaXRhbCUyMG5ldHdvcmslMjB0ZWNobm9sb2d5JTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3Njk4Mjc5MzV8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Abstract digital network background",
+        "usage": "Hero section background with overlay-opacity-90"
+      },
+      "feature_speed": {
+        "url": "https://images.unsplash.com/photo-1742774101928-f7e92a471c1b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NjZ8MHwxfHNlYXJjaHw0fHxoaWdoJTIwc3BlZWQlMjBpbnRlcm5ldCUyMGZpYmVyJTIwb3B0aWMlMjBsaWdodCUyMGFic3RyYWN0fGVufDB8fHx8MTc2OTgyNzk0MXww&ixlib=rb-4.1.0&q=85",
+        "alt": "Fiber optic speed",
+        "usage": "Feature card: Fast Processing"
+      }
+    },
+    "icons": {
+      "library": "lucide-react",
+      "preferred": ["Download", "Zap", "ShieldCheck", "Music", "Video", "Settings", "Menu", "X"]
+    }
+  },
+  "universal_guidelines": {
+    "file_extension": ".js or .jsx (NO TypeScript)",
+    "testing": "All interactive elements MUST have data-testid attribute (e.g., data-testid='download-btn').",
+    "accessibility": "Ensure contrast ratio > 4.5:1. Use aria-labels on icon-only buttons.",
+    "transparency": "NEVER use completely transparent backgrounds for headers/dropdowns. Use at least bg-slate-950/80 with backdrop-blur.",
+    "animations": "Use framer-motion for entrance effects. Simple fade-in-up for cards."
+  },
+  "instructions_to_main_agent": [
+    "1. Install 'lucide-react' and 'framer-motion' immediately.",
+    "2. Configure tailwind.config.js to extend the color palette with the 'Cyber-Professional' colors defined above.",
+    "3. Create a 'Layout' component that handles the responsive ad sidebars (hidden on mobile, visible on desktop).",
+    "4. Build the 'VideoInput' component as the centerpiece—it needs to feel expensive.",
+    "5. For the 'Blog', use a simple JSON-based static content system. Do not overengineer a CMS.",
+    "6. Ensure the 'Download' button has a loading state that is clearly visible."
+  ]
+}
